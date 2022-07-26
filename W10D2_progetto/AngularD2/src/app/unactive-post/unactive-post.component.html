@@ -1,0 +1,7 @@
+<main>
+  <div *ngFor="let p of unactive; index as i">
+    <h3>{{p.title}}</h3>
+    <p>{{p.body}}</p>
+    <button (click)="change(i)">toggle</button>
+  </div>
+</main>
