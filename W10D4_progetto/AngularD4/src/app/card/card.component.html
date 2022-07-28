@@ -2,6 +2,6 @@
   <h3 appUnderlinedirective>{{post.title}}</h3>
   <p>{{post.body}}</p>
   <p *ngIf="post.like">favourites</p>
-  <button>Toggle</button>
+  <button (click)="editPost()">Toggle</button>
   <button routerLink="/{{findau()}}{{post.id}}">Dtail</button>
 </div>

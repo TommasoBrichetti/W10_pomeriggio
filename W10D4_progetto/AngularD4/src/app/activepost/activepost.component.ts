@@ -18,7 +18,6 @@ export class ActivepostComponent implements OnInit {
     })
 
   }
-
   deactivePost(id:number){
     this.activePosts[id].active = false
     this.arrayPost.changeActivePropreties(id,this.activePosts[id].active, this.activePosts)
