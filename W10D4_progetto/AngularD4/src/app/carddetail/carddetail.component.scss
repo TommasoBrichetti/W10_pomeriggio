@@ -1,0 +1,26 @@
+div{
+  height: 25vh;
+  padding: 2rem 0;
+  text-align: center;
+  border: 1px solid rgb(133, 212, 15);
+  border-radius: 5px;
+  margin-bottom: 5vh;
+  h3{
+    color: rgb(133, 212, 15);
+  }
+  p{
+    color: grey;
+  }
+  button{
+    background-color: rgb(133, 212, 15);
+    border: 2px solid white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    color: white;
+  }
+  button:hover{
+    color: rgb(133, 212, 15);
+    border: 2px solid rgb(133, 212, 15);
+    background-color: white;
+  }
+}

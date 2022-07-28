@@ -1,0 +1,7 @@
+<div>
+  <h3>{{post.title}}</h3>
+  <h4>{{post.type}}</h4>
+  <p>{{post.body}}</p>
+  <p>{{post.date}}</p>
+  <button (click)="toggleLike()" [ngClass]="{'liked':liked}">favourites</button>
+</div>

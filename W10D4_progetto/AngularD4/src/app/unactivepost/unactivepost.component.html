@@ -1,0 +1,3 @@
+<div>
+  <app-card *ngFor="let p of unactivePosts; index as i" [post]="p" (customEvent)="activePost($event)"></app-card>
+  </div>
