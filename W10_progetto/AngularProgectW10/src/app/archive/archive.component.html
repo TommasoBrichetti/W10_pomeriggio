@@ -1,0 +1,8 @@
+<nav>
+  <p><a routerLink="/">Todo</a></p>
+</nav>
+
+<div>
+  <p> Done </p>
+<app-donecard *ngFor=" let d of done; index as j" [info]="d" [index]="j" (customEvent2)="remove($event)"></app-donecard>
+</div>

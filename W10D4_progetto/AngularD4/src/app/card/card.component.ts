@@ -9,6 +9,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Input() post: any
+  @Input() index: any
 
 
   @Output() customEvent=new EventEmitter()

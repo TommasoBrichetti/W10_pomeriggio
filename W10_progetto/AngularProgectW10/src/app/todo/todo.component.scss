@@ -1,0 +1,55 @@
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+  border-radius: 50px;
+  margin-bottom: 5vh;
+  p{
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      color: red;
+    }
+  }
+}
+
+div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p{
+    font-weight: bold;
+    color: purple;
+  }
+}
+
+
+section{
+  width: 30%;
+  border-radius: 10px;
+  background-color:  purple;
+  position: fixed;
+  bottom: 0;
+  left: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h3{
+    color: white;
+  }
+
+  button{
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+  }
+  button:hover{
+    background-color: rgb(154, 222, 51);
+    color: white;
+    border: 2px solid white;
+  }
+}

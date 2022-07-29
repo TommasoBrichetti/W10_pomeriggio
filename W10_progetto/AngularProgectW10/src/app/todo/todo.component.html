@@ -1,0 +1,14 @@
+<nav>
+  <p><a routerLink="/archive">Archive</a></p>
+</nav>
+
+<div>
+  <p> What you have to do now? </p>
+<app-card *ngFor=" let t of todo; index as i" [info]="t" [index]="i" (customEvent)="remove($event)"></app-card>
+</div>
+
+<section>
+  <h3>New TODO</h3>
+  <input type="text" placeholder="add your new todo!">
+  <button (click)="add()">Add!</button>
+</section>

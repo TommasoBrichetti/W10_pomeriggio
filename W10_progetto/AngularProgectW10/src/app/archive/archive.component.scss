@@ -1,0 +1,27 @@
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+  border-radius: 50px;
+  margin-bottom: 5vh;
+  p{
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      color: red;
+    }
+  }
+}
+
+div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p{
+    font-weight: bold;
+    color: purple;
+  }
+}
