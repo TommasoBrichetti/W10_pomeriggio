@@ -1,5 +1,5 @@
 export interface TodoInterface {
   id:number,
-  title:any, //TODO mettere string risolvendo il problema di unknown
+  title:string,
   completed:boolean
 }

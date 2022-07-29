@@ -15,7 +15,17 @@ export class TodoServiceService {
   }
 
   insertTodo(obj:TodoInterface){
-    this.arr.push(obj)
+    let x = this
+    let promise:Promise <any> = new Promise(function(su,er){
+    setTimeout(() => {
+      x.arr.push(obj)
+      su(null)
+    }, 2000);
+
+  })
+  return promise
   }
+
+
 
 }

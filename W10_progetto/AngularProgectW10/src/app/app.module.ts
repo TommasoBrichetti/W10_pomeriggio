@@ -7,6 +7,7 @@ import { TodoComponent } from './todo/todo.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { CardComponent } from './card/card.component';
 import { DonecardComponent } from './donecard/donecard.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DonecardComponent } from './donecard/donecard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

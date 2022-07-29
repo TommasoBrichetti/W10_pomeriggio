@@ -16,21 +16,23 @@ export class TodoComponent implements OnInit {
     this.todo = this.todoSrv.getTodo().filter(function (el){return el.completed == false})
   }
 
+  input = ''
   add(){
-    let input = document.querySelector('input')?.value
     let obj:TodoInterface = {
       id: this.todoSrv.getTodo().length+1,
-      title: input,
+      title: this.input,
       completed: false
     }
-    this.todoSrv.insertTodo(obj)
-    console.log(this.todoSrv.getTodo());
-    this.todo = this.todoSrv.getTodo().filter(function (el){return el.completed == false})
-    console.log(this.todo);
+    this.todoSrv.insertTodo(obj).then(()=>{
+      this.todo = this.todoSrv.getTodo().filter(function (el){return el.completed == false})})
+
+
   }
 
   remove(index:number){
-    this.todo.splice(index,1)
+     this.todo.splice(index,1)
+     console.log(this.todoSrv.getTodo());
+
   }
 
 }
